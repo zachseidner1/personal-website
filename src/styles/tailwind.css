@@ -1,5 +1,7 @@
 @tailwind base;
 
+
+
 /* Your own custom base styles */
 
 /* Start purging... */
@@ -13,3 +15,18 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&family=Rubik:wght@300;400;500;700;800&display=swap');
+
+/* figure this out later, probably doing the background the wrong way :( */
+.bg-style {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.2);
+  z-index: -1;
+  background-image: url("https://img.rawpixel.com/private/static/images/website/2022-05/px1087999-image-kwvy4nsa.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=ef3f887d8f4d89c2aa1d175b1ce6fdae");
+}
