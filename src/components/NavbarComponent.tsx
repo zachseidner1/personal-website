@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function NavbarComponent() {
   return (
+    // TODO add highlighting when a route is selected.
     <Navbar bg="dark" variant="dark">
       <Container>
         <Navbar.Brand href="/">Zachary Seidner</Navbar.Brand>
