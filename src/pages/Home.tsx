@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import FadeInUpTransition from '../components/FadeInUpTransition';
-import IntroTerminal from '../components/IntroTerminal';
-import NavbarComponent from '../components/NavbarComponent';
+import { Typewriter } from 'react-simple-typewriter'
+
 
 function Home() {
   const maxSteps = 3;
@@ -59,7 +59,17 @@ function Home() {
           } />
           <span className='md:ml-20 ml-5'>
             <FadeInUpTransition isShowing={step >= 2} body={
-              <IntroTerminal />
+              <div className="bg-black rounded-xl border-4 border-solid border-gray-500 p-3 mb-3 w-80">
+                <span className={'text-green-400 font-roboto-mono text-2xl'}>
+                  {"> "}
+                  <Typewriter
+                    words={["Zach Seidner", "an aspiring SWE", "a code lover <3"]}
+                    cursorStyle='█'
+                    cursor={true}
+                    loop={true}
+                  />
+                </span>
+              </div>
             } />
           </span>
         </div>

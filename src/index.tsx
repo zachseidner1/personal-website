@@ -11,7 +11,10 @@ import NavbarComponent from './components/NavbarComponent';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <NavbarComponent />
+    <div className='z-100'>
+      <NavbarComponent />
+    </div>
+
 
     <Router>
       <Routes>
