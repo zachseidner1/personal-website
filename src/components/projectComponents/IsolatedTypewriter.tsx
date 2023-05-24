@@ -11,4 +11,4 @@ const IsolatedTypewriter = React.memo(({ content }: { content: string }) => {
   )
 });
 
-export default IsolatedTypewriter;
+export default IsolatedTypewriter; 

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import FadeInUpTransition from '../components/FadeInUpTransition';
+import FadeInUpTransition from '../components/general/FadeInUpTransition';
 import { Typewriter } from 'react-simple-typewriter'
+import IsolatedIntroTypewriter from '../components/introComponents/IsolatedIntroTypewriter';
 
 
 function Home() {
@@ -38,7 +39,7 @@ function Home() {
   return (
     <>
 
-      <div className='flex flex-col h-screen w-screen justify-center overflow-hidden'>
+      <div className='flex flex-col h-screen w-screen justify-center overflow-hidden items-center'>
 
         <div className='flex flex-row items-center overflow-hidden flex-wrap gap-2'>
           <FadeInUpTransition isShowing={helloIsShowing} body={
@@ -62,19 +63,21 @@ function Home() {
               <div className="bg-black rounded-xl border-4 border-solid border-gray-500 p-3 mb-3 w-80">
                 <span className={'text-green-400 font-roboto-mono text-2xl'}>
                   {"> "}
-                  <Typewriter
-                    words={["Zach Seidner", "an aspiring SWE", "a code lover <3"]}
-                    cursorStyle='█'
-                    cursor={true}
-                    loop={true}
-                  />
+                  <IsolatedIntroTypewriter />
                 </span>
               </div>
             } />
           </span>
+
         </div>
+        <FadeInUpTransition isShowing={step >= 3} body={
+          <img
+            className='rounded-xl h-72 w-72'
+            src="https://images.squarespace-cdn.com/content/v1/59370444b8a79b445e67187e/3ec30c4e-dd33-47ca-8e5f-f2de6813dfad/zach.png?format=300w"
+          />
+        } />
         <div
-          className='bg-style overflow-hidden ease-in-out '
+          className='bg-style overflow-hidden ease-in-out self-start '
           style={{
             backgroundPositionX: `-${mouseProgress.x * 100}px`,
             backgroundPositionY: `${mouseProgress.y * 100}px`,
