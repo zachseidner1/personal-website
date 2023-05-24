@@ -5,6 +5,7 @@ module.exports = {
       fontFamily: {
         'rubik': ['Rubik', 'sans-serif'],
         'roboto-mono': ['Roboto Mono', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
       },
       animation: {
         'spin-slow': 'spin 20s linear infinite'

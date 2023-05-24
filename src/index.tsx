@@ -18,7 +18,11 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
     <Router>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={
+          <div className='overflow-hidden'>
+            <Home />
+          </div>
+        } />
         <Route path='/projects' element={<Projects />} />
         <Route path='/about' element={<Experience />} />
 
