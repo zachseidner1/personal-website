@@ -30,7 +30,7 @@ export default function Experience() {
       {/* Background */}
       <div className='fixed -z-10 bg-gray-900 h-screen w-screen ' />
 
-      <div ref={title} className='text-white text-7xl mt-4 font-rubik'>
+      <div ref={title} className='text-white md:text-7xl text-5xl mt-4 font-rubik'>
         Experience
       </div>
       {/* Underline */}
@@ -38,7 +38,7 @@ export default function Experience() {
         style={{
           width: underlineWidth
         }} />
-      <div className='flex flex-col w-screen items-center gap-4   md:px-20 px-8'>
+      <div className='flex flex-col md:px-20 gap-4 px-8'>
         <FadeInUpTransition body={
           <ExperienceCard title="Cornell AppDev" desc={
             ' \
