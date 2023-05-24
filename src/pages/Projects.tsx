@@ -67,7 +67,7 @@ export default function Projects() {
               desc='Happiness App is a collaborative journaling web app that allows 
         users to write about their days and see statistics about their 
         happiness. The website currently supports over 2000 journal entries. As 
-        a team of 3, we are continuing to update the app and adding features.'
+        a team of 3, we are continuing to update the app and add more features.'
               imgSrc='https://github.com/jonathanjma/HappinessApp/raw/main/imgs/profile.png'
               gitLink='https://github.com/jonathanjma/HappinessApp'
               projectLink={"https://www.happinessapp.me/"}
