@@ -22,7 +22,7 @@ export default function ProjectComponent({ title, desc, imgSrc, gitLink, project
               </a>
             </div>
           </div>
-          <ProjectTerminal content={desc} />
+          <p className='bg-gray-800 text-white p-4 font-roboto rounded-xl text-xl'> {desc}</p>
         </div>
       </div>
     </>

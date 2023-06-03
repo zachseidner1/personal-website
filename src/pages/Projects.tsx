@@ -1,6 +1,7 @@
 import React, { useEffect, useState, createRef } from 'react'
 import ProjectComponent from '../components/projectComponents/ProjectComponent';
 import FadeInUpTransition from '../components/general/FadeInUpTransition';
+import iCookScreenshot from "../assets/images/iCookScreenshot.jpeg"
 
 export default function Projects() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -59,15 +60,15 @@ export default function Projects() {
       <div ref={blurredCircle} className={`-z-10 h-[700px] w-[1000px] brightness-50 bg-white fixed rounded-full bg-gradient-to-r from-purple-500 to-pink-500 animate-spin-slow blur-3xl`}></div>
 
       {/* Projects: */}
-      <div className='flex flex-col gap-4 mt-8' >
+      <div className='flex flex-col gap-4 mt-8 md:mx-8 mx-4' >
         <FadeInUpTransition isShowing={steps > 0}
           body={
             <ProjectComponent
               title='Happiness App'
-              desc='Happiness App is a collaborative journaling web app that allows 
-        users to write about their days and see statistics about their 
-        happiness. The website currently supports over 2000 journal entries. As 
-        a team of 3, we are continuing to update the app and add more features.'
+              desc='Happiness App is a mood tracking social media platform aiming to foster stronger group connections and 
+              allow people to more easily keep in touch. There are also statistics to provide insights on happiness 
+              and graph features. Currently we have a beta that is released as a web app, and we are hoping to redesign much 
+              of the styles for a full release at the beginning of the Fall 23 semester.'
               imgSrc='https://github.com/jonathanjma/HappinessApp/raw/main/imgs/profile.png'
               gitLink='https://github.com/jonathanjma/HappinessApp'
               projectLink={"https://www.happinessapp.me/"}
@@ -81,7 +82,7 @@ export default function Projects() {
               title='iCook'
               desc='I acted as the lead of a 4-person team to develop a statically scoped functional programming language with generational garbage collection using OCaml.
                   Throughout the project I helped schedule meetings and deadlines to keep group productivity high. I also used the environment model to implement core language features.'
-              imgSrc='https://media.discordapp.net/attachments/861698114603843594/1110611406954434611/image.png?width=858&height=633'
+              imgSrc={iCookScreenshot}
               gitLink='https://github.com/jonathanjma/iCook'
               projectLink={null}
             />
