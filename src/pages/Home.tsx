@@ -1,19 +1,18 @@
 import { useEffect, useState } from 'react';
+import me from "../assets/images/me.jpg";
 import FadeInUpTransition from '../components/general/FadeInUpTransition';
-import { Typewriter } from 'react-simple-typewriter'
 import IsolatedIntroTypewriter from '../components/introComponents/IsolatedIntroTypewriter';
-
 
 function Home() {
   const maxSteps = 3;
   const [step, setStep] = useState(0);
-  const [helloIsShowing, setHelloIsShowing] = useState(false)
+  const [helloIsShowing, setHelloIsShowing] = useState(false);
   const [mouseProgress, setMouseProgress] = useState({ x: 0, y: 0 });
 
   // Continue animation effects
   useEffect(() => {
     setHelloIsShowing(true);
-    console.log(`steps: ${step}`)
+    console.log(`steps: ${step}`);
     setTimeout(() => {
       if (step < maxSteps)
         setStep(step + 1);
@@ -72,8 +71,8 @@ function Home() {
         </div>
         <FadeInUpTransition isShowing={step >= 3} body={
           <img
-            className='rounded-xl h-72 w-72'
-            src="https://images.squarespace-cdn.com/content/v1/59370444b8a79b445e67187e/3ec30c4e-dd33-47ca-8e5f-f2de6813dfad/zach.png?format=300w"
+            className='rounded-xl h-72 w-72 mt-8'
+            src={me}
           />
         } />
         <div

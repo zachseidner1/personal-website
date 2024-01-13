@@ -29,7 +29,7 @@
   background-repeat: no-repeat;
   filter: brightness(0.2);
   z-index: -1;
-  background-image: url("https://img.rawpixel.com/private/static/images/website/2022-05/px1087999-image-kwvy4nsa.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=ef3f887d8f4d89c2aa1d175b1ce6fdae");
+  background-image: url("../assets/images/bg.jpg");
 }
 
 @keyframes underlineShimmer {
