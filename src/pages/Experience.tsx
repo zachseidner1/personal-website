@@ -1,15 +1,15 @@
-import React, { createRef, useState, useEffect } from 'react'
+import { createRef, useEffect, useState } from 'react';
+import RecessBig from "../assets/images/recessBig.png";
 import ExperienceCard from '../components/general/ExperienceCard';
-import RecessBig from "../assets/images/recessBig.png"
 import FadeInUpTransition from '../components/general/FadeInUpTransition';
 
 export default function Experience() {
   const title = createRef<HTMLDivElement>();
   const [underlineWidth, setUnderlineWidth] = useState(0);
-  const maxSteps = 3
+  const maxSteps = 3;
   const [steps, setSteps] = useState(0);
   useEffect(() => {
-    console.log(`title current width = ${title.current?.offsetWidth}`)
+    console.log(`title current width = ${title.current?.offsetWidth}`);
     if (title.current !== null) {
       setUnderlineWidth(title.current.offsetWidth);
     }
@@ -20,10 +20,10 @@ export default function Experience() {
     }
     setTimeout(() => {
       if (steps < maxSteps) {
-        setSteps(steps + 1)
+        setSteps(steps + 1);
       }
-    }, 1000)
-  }, [steps])
+    }, 1000);
+  }, [steps]);
 
   return (
     <div className='h-screen w-screen flex flex-col items-center'>
@@ -47,8 +47,9 @@ export default function Experience() {
             on adding new features to Volume, an app looking to connect students \
             with student-run publications and student-run organizations on campus. \
             Helped to achieve a user base increase of 360%. \
-            TA\'d since February 2023 and going to be the course instructor for \
-            Android development in the Fall 2023 semester.'}
+            Was course instructor during the Fall 2023 semester for  CS 1998--the \
+             Intro to Android Development course \
+            that provides an introduction to frontend development, Kotlin, and Android Studio.'}
             webLink={"https://www.cornellappdev.com/"} imageSrc='https://1776779531-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/spaces%2F-Lu9Zw53dmTuhqAq-8K8%2Favatar.png?generation=1577060366433142&alt=media' />
         } isShowing={steps > 1} />
 
@@ -68,5 +69,5 @@ export default function Experience() {
         <div className='h-20' />
       </div>
     </div>
-  )
+  );
 }
