@@ -28,7 +28,12 @@ export default function Experience() {
   const experienceCards = [
     <ExperienceCard
       title="Ramp"
-      desc="Android developer intern at Ramp, the fastest-growing SaaS startup of all-time by revenue. Currently working on their Android app, I contributed by adding a tab to the manager inbox feature screen, to be released to over 50k users. In addition to feature development, I am actively improving the app's overall architecture to ensure scalability and maintainability. This internship is ongoing, allowing me to continually make impactful contributions to Ramp's innovative mobile solutions."
+      desc={`
+Worked closely with a team of 5 at fintech company Ramp, the fastest-growing SaaS startup of all-time by revenue.
+Added tabs to manager inbox for procurement requests and bill pay, to be rolled out to 50k+ users.
+Improved the app's architecture to improve scalability by modifying code generation using Mustache, creating a dispatcher for common UI events, and more.
+        
+        `}
       webLink={"https://ramp.com"}
       imageSrc={Ramp}
     />,
